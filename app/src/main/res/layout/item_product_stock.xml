@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="8dp">
+
+    <TextView
+        android:id="@+id/product_stock_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12345"
+        android:textAppearance="?attr/textAppearanceBody2"
+        android:textColor="?android:attr/textColorSecondary"
+        app:layout_constraintBaseline_toBaselineOf="@+id/product_stock_name"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="12345" />
+
+    <TextView
+        android:id="@+id/product_stock_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Nombre del Producto"
+        android:textAppearance="?attr/textAppearanceBody1"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/product_stock_quantity"
+        app:layout_constraintStart_toEndOf="@id/product_stock_id"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Nombre del Producto" />
+
+    <TextView
+        android:id="@+id/product_stock_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/quantity_background"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="2dp"
+        android:text="150"
+        android:textAppearance="?attr/textAppearanceBody2"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/product_stock_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="150" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

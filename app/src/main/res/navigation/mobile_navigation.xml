@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/login_fragment">
+
+    <action
+        android:id="@+id/action_global_navigation_notifications"
+        app:destination="@id/navigation_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.pudumenu.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_inventario"
+            app:destination="@id/navigation_inventario" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_estadisticas2"
+            app:destination="@id/navigation_estadisticas" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_ventas"
+            app:destination="@id/navigation_ventas" />
+        <action
+            android:id="@+id/action_home_to_new_sale"
+            app:destination="@id/navigation_new_sale" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_ventas"
+        android:name="com.example.pudumenu.ui.ventas.VentasFragment"
+        android:label="@string/title_ventas"
+        tools:layout="@layout/fragment_ventas" >
+        <action
+            android:id="@+id/action_navigation_ventas_to_navigation_home"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_navigation_ventas_to_navigation_inventario"
+            app:destination="@id/navigation_inventario" />
+        <action
+            android:id="@+id/action_navigation_ventas_to_navigation_estadisticas"
+            app:destination="@id/navigation_estadisticas" />
+        <action
+            android:id="@+id/action_ventas_to_new_sale"
+            app:destination="@id/navigation_new_sale" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_inventario"
+        android:name="com.example.pudumenu.ui.inventario.InventarioFragment"
+        android:label="@string/title_inventario"
+        tools:layout="@layout/fragment_inventario" >
+        <action
+            android:id="@+id/action_navigation_inventario_to_navigation_home"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_navigation_inventario_to_navigation_estadisticas"
+            app:destination="@id/navigation_estadisticas" />
+        <action
+            android:id="@+id/action_navigation_inventario_to_navigation_ventas"
+            app:destination="@id/navigation_ventas" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_estadisticas"
+        android:name="com.example.pudumenu.ui.estadisticas.EstadisticasFragment"
+        android:label="@string/title_estadisticas"
+        tools:layout="@layout/fragment_estadisticas" >
+        <action
+            android:id="@+id/action_navigation_estadisticas_to_navigation_home2"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_navigation_estadisticas_to_navigation_inventario"
+            app:destination="@id/navigation_inventario" />
+        <action
+            android:id="@+id/action_navigation_estadisticas_to_navigation_ventas"
+            app:destination="@id/navigation_ventas" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/login_fragment"
+        android:name="com.example.pudumenu.ui.login.LoginFragment"
+        android:label="login_fragment"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_login_to_main"
+            app:destination="@id/navigation_home"
+            app:popUpTo="@id/login_fragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.pudumenu.ui.notificaciones.NotificationsFragment"
+        android:label="fragment_notifications"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_new_sale"
+        android:name="com.example.pudumenu.ui.newsale.NewSaleFragment"
+        android:label="fragment_new_sale"
+        tools:layout="@layout/fragment_new_sale" />
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.pudumenu.ui.register.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" />
+
+</navigation>

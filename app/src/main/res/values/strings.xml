@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PuduMenu</string>
+    <string name="title_home">Home</string>
+    <string name="login_title">Inicia sesión en tu cuenta</string>
+    <string name="login_subtitle">Ingresa tu nombre de usuario y contraseña para ingresar</string>
+    <string name="login_button">Ingresar</string>
+    <string name="logo_description">Logo</string>
+    <string name="login_email_hint">Correo Electrónico</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_remember_me">Recuerdame</string>
+    <string name="login_forgot_password">Olvidaste la contraseña?</string>
+    <string name="title_ventas">Ventas</string>
+    <string name="title_inventario">Inventario</string>
+    <string name="title_estadisticas">Estadísticas</string>
+    <string name="action_new_sale">Nueva Venta</string>
+    <string name="action_add_product">Añadir Producto</string>
+    <string name="action_scan_item">Escanear</string>
+    <string name="home_welcome_user">Hola, Usuario</string>
+    <string name="notifications_button_description">Notificaciones</string>
+    <string name="home_daily_sales_summary">Resumen de ventas diarias</string>
+    <string name="summary_invoices_label">Boletas emitidas hoy</string>
+    <string name="summary_money_label">Dinero generado hoy</string>
+    <string name="summary_products_label">Productos vendidos hoy</string>
+    <string name="home_invoice_summary">Resumen de Boletas</string>
+    <string name="invoice_label">Boleta</string>
+    <string name="subtotal_label">Subtotal</string>
+
+    <!-- Estadisticas -->
+    <string name="stats_start_date">Fecha de Inicio</string>
+    <string name="stats_end_date">Fecha de Fin</string>
+    <string name="stats_sales_chart_title">Gráfico de Ventas</string>
+    <string name="stats_total_sales">Ventas Totales</string>
+    <string name="stats_invoices_issued">Boletas Emitidas</string>
+    <string name="stats_top_product">Producto Más Vendido</string>
+
+    <!-- Ventas -->
+    <string name="sales_action_new">Nueva Venta</string>
+    <string name="sales_action_query">Consultar Venta</string>
+    <string name="sales_action_cancel">Anular Venta</string>
+    <string name="sales_action_cash_closing">Cierre de Caja</string>
+    <string name="sales_action_credit_note">Nota de Crédito</string>
+    <string name="sales_action_reports">Reportes</string>
+    <string name="sales_detailed_summary_title">Resumen Detallado de Ventas</string>
+    <string name="sales_summary_cash">Ventas en Efectivo</string>
+    <string name="sales_summary_card">Ventas con Tarjeta</string>
+    <string name="sales_summary_avg_ticket">Ticket Promedio</string>
+    <string name="sales_last_transactions_title">Últimas Transacciones del Día</string>
+
+    <!-- Inventario -->
+    <string name="inventory_action_add">Agregar</string>
+    <string name="inventory_action_modify">Modificar</string>
+    <string name="inventory_action_delete">Eliminar</string>
+    <string name="inventory_stock_list_title">Stock de Productos</string>
+    <string name="inventory_product_id_label">ID:</string>
+    <string name="inventory_product_quantity_label">Cant:</string>
+
+    <!-- Nueva Venta -->
+    <string name="action_decrease_quantity">Disminuir cantidad</string>
+    <string name="action_increase_quantity">Aumentar cantidad</string>
+    <string name="new_sale_document_type">Tipo de Documento</string>
+    <string name="new_sale_add_product_manual">Ingresar producto</string>
+    <string name="new_sale_scan_product">Escanear producto</string>
+    <string name="new_sale_product_list_title">Productos</string>
+    <string name="new_sale_subtotal">Subtotal</string>
+    <string name="new_sale_approve_button">Aprobar Venta</string>
+    <string name="new_sale_payment_method">Método de pago</string>
+    <string name="new_sale_scan_code_button">Escanear Código</string>
+    <string name="new_sale_add_product_button">Agregar Producto</string>
+
+    <!-- Login Validation -->
+    <string name="error_field_required">Este campo es requerido</string>
+    <string name="error_invalid_email">Correo electrónico no válido</string>
+
+    <!-- Register -->
+    <string name="register_title">Crea una cuenta nueva</string>
+    <string name="register_subtitle">Completa los siguientes datos para registrarte</string>
+    <string name="home_shortcuts_note">Atajos</string>
+
+    <!-- String Arrays for Dropdowns -->
+    <string-array name="document_types">
+        <item>Boleta Electrónica</item>
+        <item>Factura Electrónica</item>
+    </string-array>
+
+    <string-array name="payment_methods">
+        <item>Efectivo</item>
+        <item>Tarjeta</item>
+    </string-array>
+
+</resources>

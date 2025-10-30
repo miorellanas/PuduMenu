@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_ventas"
+        android:icon="@drawable/store_24dp_e3e3e3_fill1_wght400_grad0_opsz24"
+        android:title="@string/title_ventas" />
+
+    <item
+        android:id="@+id/navigation_inventario"
+        android:icon="@drawable/ic_inventory_white"
+        android:title="@string/title_inventario" />
+
+    <item
+        android:id="@+id/navigation_estadisticas"
+        android:icon="@drawable/area_chart_24dp_e3e3e3_fill1_wght400_grad0_opsz24"
+        android:title="@string/title_estadisticas" />
+
+</menu>
